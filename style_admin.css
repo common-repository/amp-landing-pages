@@ -1,0 +1,15 @@
+/** Add border to blocks for better differentiation. **/
+.editor-block-list__block{border:#CCC dotted 1px;}
+.editor-block-list__block.is-hovered{border:#00f dotted 1px;}
+
+/** Make interface full width to allow for better experience. **/
+.edit-post-visual-editor .editor-block-list__block{max-width:100%;}
+
+/** Make horizontal rule full width of block as it would be seen on website. **/
+.wp-block-separator{max-width:100%;}
+
+/* Stop strange floating properties of editor blocks that affects selecting them properly. */
+.editor-block-list__block:after{content:' ';display:block;clear:both;}
+
+/* Adjust width of text input for custom hero banner title. */
+#amplpHeroTitle{width:100%;}

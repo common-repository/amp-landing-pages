@@ -1,0 +1,89 @@
+/** Make interface full width to allow for better experience. **/
+.edit-post-visual-editor .editor-block-list__block{max-width:calc(100% - 60px);}
+
+/** Make horizontal rule full width of block as it would be seen on website. **/
+.wp-block-separator{max-width:calc(100% - 60px);}
+
+/** Styling used by our custom Testimonial block. **/
+.cf{display:block;width:100%;clear:both;}
+.qt.fa{width:40px;height:30px;font-size:30px;float:left;margin:10px 0;color:#23282d;}
+.qt.fa-quote-right{text-align:right;}
+.qt.hr{float:left;width:calc(100% - 80px);margin-top:25px;border-bottom:#23282d 1px solid;}
+.wp-block-tacg-tb {
+	display: flex;
+	align-items: stretch;
+	background-color: rgba(0,0,0,.06);
+	min-height:200px;
+}
+.wp-block-tacg-tb .tbimg {
+	display: flex;
+	align-items: center;
+	width: 140px;
+	height: 140px;
+	max-width: 140px;
+	max-height: 140px;
+	min-width: 140px;
+	min-height: 140px;
+	border-radius: 50%;
+	margin:30px;
+}
+.wp-block-tacg-tb .tbimg.image-inactive {
+	border: 1px solid #23282d;
+}
+.wp-block-tacg-tb .tbimg.image-active {
+	background-size: cover;
+	background-position: center;
+	border: none;
+}
+.wp-block-tacg-tb .tbimg button {
+	margin: 0 auto;
+}
+.wp-block-tacg-tb .tbimg button.image-button {
+	line-height: 0;
+	padding: 0px;
+}
+.wp-block-tacg-tb .tbimg button.image-button img {
+	/* opacity: 0; */
+	margin: 0;
+	border-radius: 50%;
+}
+.wp-block-tacg-tb .tbcon {
+	width:calc(100% - 230px);
+	margin:30px 0;
+}
+
+
+.wp-block-tacg-ms .tbimg, .wp-block-tacg-ms .tbcon {
+	display:inline-block;
+	width:49%;
+	vertical-align:top;
+}
+
+.wp-block-tacg-ms .tbcon {
+	padding:0 0 0 20px;
+}
+
+.wp-block-tacg-ms.right .tbimg {
+	float:right;
+}
+.wp-block-tacg-ms.right .tbcon {
+	float:left;
+	padding:0 20px 0 0;
+}
+.wp-block-tacg-ms.center .tbimg, .wp-block-tacg-ms.center .tbcon {
+	width:100%;
+	display:block;
+	text-align:center;
+}
+.wp-block-tacg-ms .tbimg amp-img {
+	max-height:400px;
+}
+.wp-block-tacg-ms.center .tbcon {
+	padding:20px 0 0 0;
+}
+
+.placeholderbox{border:#ccc solid thin;background:#EEE;font-size:17px;font-weight:bold;padding:20px;max-width:100%;max-height:100%;color:#000;}
+.placeholderbox .msg{font-weight:normal;font-size:.9em;}
+
+
+body > *{width:100%;max-width:100% !important;}
